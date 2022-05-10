@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>javascript</title>
+  <script type="text/javascript">
+    // Declares a variable
+    var x = 3;
+    // Declares a function
+    function generatefunny() {
+      var funnyphrases = [
+         "your mom is so phat she causees earth",
+         "your mum is so dumb she thought chiken was a shoe",
+         "your mum is so phat she sinks thought the earth",
+         "you mommy is so greedy she ate the house",
+         "your mum is so bi she cant fit throught doors",
+         "your so blind she cant see"
+      ]
+      var FunnyWords = document.getElementById('FunnyWords');
+      FunnyWords.innerHTML = funnyphrases[rollDie() - 1];
+    }
+// returnA random number between 1 AND 6
+    function rollDie() {
+      var newNumber = Math.random()
+      newNumber = newNumber * 6
+      newNumber = Math.ceil(newNumber)
+      return newNumber
+    }
+
+// put a random number in the dieBox
+    function getDieRoll() {
+      var dieBox = document.getElementById('dieBox');
+      dieBox.innerHTML = rollDie();
+     }
+
+// test using list
+//  var itemList = ["Diamond Sword", "Diamond Pickaxe", "Golden Apple", "Magenta Wool"];
+// console.log(itemList[0]);
+// console.log(itemList[1]);
+// console.log(itemList[2]);
+// console.log(itemList[3]);
+// console.log(itemList[x]);
+// the code above is called zombie code
+// it's cide saved for later that we do now use
+
+</script>
+</head>
+
+<body>
+
+<h1>Welcome!</h1>
+<h2 id="FunnyWords" onclick="generatefunny()">funny words here...</h2>
+<div id="dieBox" onclick="getDieRoll()">
+  click to roll the die...
+
+  </div>
+</body>
+
+</html>
