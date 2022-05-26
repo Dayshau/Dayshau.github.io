@@ -1,0 +1,60 @@
+body {
+  height: 100%;
+}
+
+.thumbsbox {
+  width: 50%;
+  height: 50%;
+  border: 4px solid #000000;
+}
+
+.ptop {
+  position: absolute;
+  top: 0px;
+}
+
+.pbot {
+  position: absolute;
+  bottom: 0px;
+}
+
+.pleft {
+  position: absolute;
+  left: 0px;
+}
+
+.pright {
+  position: absolute;
+  right: 0px;
+}
+
+#tup {
+  background-color: #00ff00;
+}
+
+#twiggle {
+  background-color: #3399ff;
+}
+
+#tdown {
+  background-color: #ff0000;
+}
+
+#toops {
+  background-color: #ffff99;
+}
+
+#tup:hover {
+  background-color: #009900;
+}
+
+#tdown:hover {
+  background-color: #990000;
+}
+
+#twiggle:hover {
+  background-color: #004d99;
+}
+#toops:hover {
+  background-color: #999900;
+}
